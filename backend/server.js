@@ -31,7 +31,6 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.options("/*", cors(corsOptions));
 
 // Routes
 app.use("/api/auth", require("./routes/authRoutes"));
