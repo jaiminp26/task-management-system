@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://task-management-system-livid-one.vercel.app",
+  "https://task-management-system-nine-jet.vercel.app",
 ];
 
 const corsOptions = {
@@ -31,7 +31,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.options("*", cors(corsOptions));
+app.options("/*", cors(corsOptions));
 
 // Routes
 app.use("/api/auth", require("./routes/authRoutes"));

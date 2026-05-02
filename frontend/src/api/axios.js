@@ -4,7 +4,7 @@ const localApi =
   import.meta.env.VITE_API_URL_LOCAL || "http://localhost:5000/api";
 const liveApi =
   import.meta.env.VITE_API_URL_REMOTE ||
-  "https://task-management-system-lb5q.onrender.com/api";
+  "https://task-management-system-brjc.onrender.com/api";
 
 const isLocalhost =
   typeof window !== "undefined" &&
